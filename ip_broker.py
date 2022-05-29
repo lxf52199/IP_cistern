@@ -85,7 +85,12 @@ def http_request(http_ip_port):
         'https': http_ip_port
     }
     try:
-        output = requests.get("https://www.baidu.com/", proxies=proxies)
+        # 检测节点是否可用.多次检测，如果可用，就把节点添加到字典中
+        output1 = requests.get("https://www.baidu.com/", proxies=proxies)
+        output2 = requests.get("https://cn.bing.com/", proxies=proxies)
+        output3 = requests.get("https://www.zhihu.com/", proxies=proxies)
+        output4 = requests.get("https://www.taobao.com/", proxies=proxies)
+        output5 = requests.get("https://www.jd.com/", proxies=proxies)
         # print("节点可用")
         # 修改一行代码
         https_ip_port = 'export ALL_PROXY=' + http_ip_port
