@@ -1,9 +1,14 @@
-# JD
-一些辅助脚本
-
-改好的PandaToken自己去小熊猫获取，变量是export PandaToken和领现金的一样（这句话不是我说的啊）
-变量
-#ql_pandaAPI_refreshCK
-export PandaToken="这里这里"
-
-#电报找 @pang_da_bot  发送 /start  点击获取token 然后填写到这里
+# 青龙使用代理池来避免黑IP问题
+使用的库
+```
+pip3 install requests
+pip3 install datetime
+pip3 install time
+pip3 install random
+pip3 install json
+```
+### 在脚本的第9行改成自己的配置文件地址，一般青龙目录都是这个
+path = '/root/ql/config/config.sh'
+### 在脚本的第10改成代理添加的行数，
+line = int(1)
+<img src="./img/htt.jpg" alt="">
