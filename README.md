@@ -16,7 +16,7 @@ line = int(134)
 <img src="./img/htt.jpg" alt="">
 
 代理脚本会根据抓取的代理池更新而延迟一秒钟更新，代理池大部分代理可用请放心使用
-运行脚本
+<br>
 线程守护运行脚本
 ```
 nohup python3 ip_broker.py &
